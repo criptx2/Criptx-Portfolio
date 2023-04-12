@@ -1,0 +1,282 @@
+/* Global styles */
+
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3 {
+	margin: 0;
+  }
+  
+  ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  /* Header */
+  
+  header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+  }
+  
+  header h1 {
+	font-size: 2rem;
+  }
+  
+  nav ul {
+	display: flex;
+  }
+  
+  nav li {
+	margin-left: 1rem;
+  }
+  
+  nav li:first-child {
+	margin-left: 0;
+  }
+  
+  nav a {
+	font-weight: bold;
+	padding: 0.5rem;
+	transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+	background-color: #555;
+  }
+  
+  /* Hero section */
+  
+  .hero {
+	background-image: url('https://via.placeholder.com/1500x500.png?text=Hero+Image');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .hero-content {
+	text-align: center;
+	max-width: 600px;
+  }
+  
+  .hero h2 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+  }
+  
+  .hero p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+	background-color: #555;
+  }
+  
+  /* Testimonial section */
+  
+  .testimonial {
+	background-color: #f2f2f2;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+  }
+  
+  .testimonial p {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+  }
+  
+  .testimonial h3 {
+	font-size: 1.2rem;
+	margin-top: 1rem;
+  }
+  
+  /* Services section */
+  
+  .services {
+	padding: 2rem;
+	text-align: center;
+  }
+  
+  .services h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+  }
+  
+  .services li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+  }
+  
+  .services h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+  }
+  
+  .services p {
+	font-size: 1.2rem;
+  }
+  
+  /* Portfolio section */
+  
+  .portfolio {
+	background-color: #f2f2f2;
+	padding: 2rem;
+	text-align: center;
+  }
+  
+  .portfolio h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+  }
+  
+  .portfolio-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .portfolio-item {
+	width: 30%;
+	margin-bottom: 2rem;
+  }
+  
+  .portfolio-item img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+  }
+  
+  .portfolio-item h3 {
+	font-size: 1.5rem;
+  }
+
+  /* Portfolio section */
+
+.portfolio {
+	background-color: #f2f2f2;
+	padding: 2rem;
+	text-align: center;
+	}
+	
+	.portfolio h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	}
+	
+	.portfolio-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	}
+	
+	.portfolio-item {
+	width: 30%;
+	margin-bottom: 2rem;
+	position: relative;
+	}
+	
+	.portfolio-item img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+	}
+	
+	.portfolio-item h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	}
+	
+	.portfolio-item p {
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+	}
+	
+	.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	}
+	
+	.overlay:hover {
+	opacity: 1;
+	}
+	
+	.overlay-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	}
+	
+	.overlay-content h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	}
+	
+	.overlay-content p {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	}
+	
+	.overlay-content a {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	}
+	
+	.overlay-content a:hover {
+	background-color: #555;
+	}
+	
+	@media screen and (max-width: 768px) {
+	.portfolio-item {
+	width: 100%;
+	}
+	}
+
+  
